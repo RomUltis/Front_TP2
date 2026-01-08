@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet2 - Connexion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <div class="login-card">
+            <h2>Connexion</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" placeholder="Entrez votre nom d'utilisateur" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+                </div>
+                <button type="submit" class="btn">Se connecter</button>
+            </form>
+            <p id="error-message" class="error"></p>
+            <p>Pas encore de compte ? <a href="#" id="showRegister">Créer un compte</a></p>
+        </div>
+        
+        <div class="register-card" style="display: none;">
+            <h2>Créer un compte</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="newUsername">Nom d'utilisateur</label>
+                    <input type="text" id="newUsername" placeholder="Choisissez un nom d'utilisateur" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">Mot de passe</label>
+                    <input type="password" id="newPassword" placeholder="Choisissez un mot de passe" required>
+                </div>
+                <button type="submit" class="btn">S'inscrire</button>
+            </form>
+            <p id="register-error-message" class="error"></p>
+            <p>Déjà un compte ? <a href="#" id="showLogin">Se connecter</a></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
